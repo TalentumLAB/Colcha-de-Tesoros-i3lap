@@ -1,0 +1,61 @@
+version: '3.7'
+services:
+  webgl:
+    image: inclusionnarino/game:1.0.6
+    container_name: inclusion-narino-game
+    ports:
+      - "8080:80"
+    networks:
+      - inclusion-narino-network
+    depends_on:
+      - back
+    restart: always
+    volumes:
+      - "./docker/serverdata.json:/webgl/StreamingAssets/serverdata.json"
+  front:
+    image: inclusionnarino/front:1.0.8
+    container_name: inclusion-narino-front
+    ports: 
+      - "3000:3000"
+    networks:
+      - inclusion-narino-network
+    depends_on:
+      - back
+    restart: always
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+      - NEXT_PUBLIC_GAME_URL=http://localhost:8080/
+  back:
+    image: inclusionnarino/back:1.0.1
+    container_name: inclusion-narino-back
+    ports:
+      - "3001:3001"
+    networks:
+      - inclusion-narino-network
+    depends_on:
+      - db
+    restart: always
+    environment:
+      - DB_HOST=inclusion-narino-db
+      - DB_PORT=3306
+      - DB_USER=inclusion-narino-user
+      - DB_PASSWORD=InclusionNariño2022
+      - DB_NAME=talentum_inclusion_narino
+      - DOCKER_DEPLOYMENT=true
+  db:
+    image: mariadb:10.4.20
+    container_name: inclusion-narino-db
+    volumes:
+      - ./docker/db/inclusion-narino-db.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: Talentum2022
+      MYSQL_USER: inclusion-narino-user
+      MYSQL_PASSWORD: InclusionNariño2022
+      MYSQL_DATABASE: talentum_inclusion_narino
+    ports:
+      - "3306:3306"
+    networks:
+      - inclusion-narino-network
+networks:
+  inclusion-narino-network:
+    driver: bridge

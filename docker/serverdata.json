@@ -1,0 +1,18 @@
+{
+    "save": false,
+    "activeTypeServer": 1,
+    "data": [
+        {
+            "typeServer": 0,
+            "serverHost": ""
+        },
+        {
+            "typeServer": 1,
+            "serverHost": "https://api.colchadetesoros.com/"
+        },
+        {
+            "typeServer": 2,
+            "serverHost": "http://my.content:3001/"
+        }
+    ]
+}
