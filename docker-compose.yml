@@ -33,8 +33,10 @@ services:
     networks:
       - inclusion-narino-network
     restart: always
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     environment:
-      - DB_HOST=my.content
+      - DB_HOST=host.docker.internal
       - DB_PORT=3306
       - DB_USER=narino-user
       - DB_PASSWORD=Inclusionnarino2022*
