@@ -41,7 +41,7 @@ services:
       - DB_USER=narino-user
       - DB_PASSWORD=Inclusionnarino2022*
       - DB_NAME=talentum_inclusion_narino
-      - DOCKER_DEPLOYMENT=true
+      - DOCKER_DEPLOYMENT=false
 networks:
   inclusion-narino-network:
     driver: bridge
