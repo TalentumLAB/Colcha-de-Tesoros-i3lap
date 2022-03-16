@@ -34,7 +34,7 @@ services:
       - inclusion-narino-network
     restart: always
     environment:
-      - DB_HOST=http://my.content
+      - DB_HOST=my.content
       - DB_PORT=3306
       - DB_USER=narino-user
       - DB_PASSWORD=Inclusionnarino2022*
