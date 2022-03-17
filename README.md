@@ -67,13 +67,13 @@ Para clonar el proyecto ejecutar los siguientes comandos:
     cd /
     mkdir repositories
     cd repositories
-    git clone https://github.com/jrgranada/Colcha-de-Tesoros-WebGl-i3lap.git
-    cd Colcha-de-Tesoros-WebGl-i3lap/
+    git clone https://github.com/jrgranada/Colcha-de-Tesoros-i3lap.git
+    cd Colcha-de-Tesoros-i3lap/
 ```
 
 ### Creación de la base de datos y del usuario mysql:
 
-Para crear la base de datos y un usuario para su acceso, se deben ejecutar los siguientes comandos, en este punto es requerido el usuario de MySQL:
+Para crear la base de datos y un usuario para accederla, se deben ejecutar los siguientes comandos. En este punto es requerido el usuario de MySQL:
 
 ```bash
     mysql -u root -p
@@ -86,7 +86,7 @@ Para crear la base de datos y un usuario para su acceso, se deben ejecutar los s
 
 ### Cargue de la base de datos
 
-Para cargar la infromación en la base de datos creada en el paso anterior, se debe ejecutar el siguiente comando:
+Para cargar la información en la base de datos creada en el paso anterior, se debe ejecutar el siguiente comando:
 
 ```bash
     mysql -u root -p talentum_inclusion_narino < docker/db/inclusion-narino-db.sql
