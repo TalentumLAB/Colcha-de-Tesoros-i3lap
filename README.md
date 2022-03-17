@@ -10,6 +10,8 @@
 
 Este proyecto contiene la información necesaria para desplegar Colcha de Tesoros en el I3LAP utilizando Docker. 
 
+### Software utilizado:
+
 * Sistema operativo del I3LAP: Ubuntu 16.04.5 LTS (Xenial Xerus)
 * Docker: Versión 20.10.7
 * Docker compose: Version 1.18.0
@@ -24,6 +26,11 @@ Se deben solicitar las siguientes credenciales:
 * Credenciales de acceso por SSH al I3LAP.
 * Credenciales de acceso a MySQL.
 * Contraseña de un usuario con privilegios de root.
+
+### Conexión al I3LAP mediante SSH
+Para establecer la conexión puede utilizar el software PuTTY que puede descargar de la página PuTTY [putty]
+
+[putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ### Apertura de puertos en el I3LAP
 * Los puertos 3306 (Base de datos), 8090 (Videojuego), 3000 (Sistema de información) y 3001 (Backend) deben estar abiertos en el I3LAP, para ello ejecutar los siguientes comandos en la shell del dispositivo.    
