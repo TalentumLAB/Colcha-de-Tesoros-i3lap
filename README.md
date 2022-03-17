@@ -28,7 +28,7 @@ Se deben solicitar las siguientes credenciales:
 * Contraseña de un usuario con privilegios de root.
 
 ### Conexión al I3LAP mediante SSH
-Para establecer la conexión puede utilizar el software PuTTY que puede descargar de la [página oficial.][putty]
+Para establecer la conexión puede utilizar el software PuTTY que puede descargar dando clic [aquí.][putty]
 
 [putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
