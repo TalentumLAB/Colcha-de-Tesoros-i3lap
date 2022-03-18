@@ -101,7 +101,7 @@ Para el despliegue de la solución se deben ejecutar los siguientes comandos:
     docker rm $(docker ps -a -q)
     iptables -L
     service docker restart
-    docker-compose -d -p "inclusion_narino" up
+    docker-compose -p "inclusion_narino" up
 ```
 
 
