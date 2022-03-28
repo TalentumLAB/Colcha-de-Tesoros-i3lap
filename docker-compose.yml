@@ -11,7 +11,7 @@ services:
       - back
     restart: always
     #volumes:
-      #- "./docker/serverdata.json:/webgl/StreamingAssets/serverdata.json"
+      #- "./docker/serverdata.json:/webgl/StreamingAssets/serverdata.json" 
   front:
     image: inclusionnarino/front:1.0.8
     container_name: inclusion-narino-front
