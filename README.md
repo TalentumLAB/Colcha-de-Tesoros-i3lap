@@ -33,7 +33,7 @@ Para establecer la conexión puede utilizar el software PuTTY que puede descarga
 [putty]: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 ### Apertura de puertos en el I3LAP
-* Los puertos 3306 (Base de datos), 8090 (Videojuego), 3000 (Sistema de información) y 3001 (Backend) deben estar abiertos en el I3LAP, para ello ejecutar los siguientes comandos en la shell del dispositivo.    
+* Los puertos 8090 (Videojuego), 3000 (Sistema de información) y 3001 (Backend) deben estar abiertos en el I3LAP, para ello ejecutar los siguientes comandos en la shell del dispositivo.    
 
 Para entrar al modo super usuario ejecutar:  
 
@@ -44,7 +44,6 @@ Para entrar al modo super usuario ejecutar:
 Para la apertura de puertos ejecutar:  
 
 ```bash
-    sudo ufw allow 3306
     sudo ufw allow 3000
     sudo ufw allow 3301
     sudo ufw allow 8090
