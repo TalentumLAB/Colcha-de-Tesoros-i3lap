@@ -13,7 +13,7 @@ services:
     volumes:
       - "./docker/serverdata.json:/webgl/StreamingAssets/serverdata.json" 
   front:
-    image: inclusionnarino/front:1.0.8
+    image: inclusionnarino/front:1.3.0
     container_name: inclusion-narino-front
     ports: 
       - "3000:3000"
