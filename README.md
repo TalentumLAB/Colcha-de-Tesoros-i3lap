@@ -45,8 +45,8 @@ Para la apertura de puertos ejecutar:
 
 ```bash
     sudo ufw allow 3000
-    sudo ufw allow 3301
-    sudo ufw allow 8090
+    sudo ufw allow 3001
+    sudo ufw allow 8070
 ```
 
 ### Permitir las conexiones externas a la base de datos
