@@ -13,7 +13,7 @@ services:
     volumes:
       - "./docker/serverdata.json:/webgl/StreamingAssets/serverdata.json"
       - "./docker/videoslsc.json:/webgl/StreamingAssets/videoslsc.json"
-      - "/mnt/CONTENIDOS/colcha-de-tesoros/videos/:/webgl/StreamingAssets/"
+      - "/mnt/CONTENIDOS/colcha-de-tesoros/videos/lsc/:/webgl/StreamingAssets/lsc/"
   front:
     image: inclusionnarino/front:1.3.0
     container_name: inclusion-narino-front
