@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   webgl:
-    image: inclusionnarino/game:1.1.4
+    image: inclusionnarino/game:1.1.9
     container_name: inclusion-narino-game
     ports:
       - "8070:80"
