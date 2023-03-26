@@ -1,1 +1,1 @@
-archivo versión: 1.1.10
+archivo versión: 1.1.11
