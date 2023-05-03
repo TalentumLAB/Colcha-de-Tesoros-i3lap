@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   webgl:
-    image: inclusionnarino/game:1.1.9
+    image: inclusionnarino/game:1.2.4
     container_name: inclusion-narino-game
     ports:
       - "8070:80"
@@ -16,7 +16,7 @@ services:
       - "/mnt/CONTENIDOS/colcha-de-tesoros/videos/lsc/:/webgl/StreamingAssets/lsc/"
       - "/mnt/CONTENIDOS/colcha-de-tesoros/videos/intro/:/webgl/StreamingAssets/intro/"
   front:
-    image: inclusionnarino/front:1.3.0
+    image: inclusionnarino/front:1.3.1
     container_name: inclusion-narino-front
     ports: 
       - "3000:3000"
@@ -29,7 +29,7 @@ services:
       - NEXT_PUBLIC_API_URL=http://my.content:3001
       - NEXT_PUBLIC_GAME_URL=http://my.content:8070/
   back:
-    image: inclusionnarino/back:1.4.0
+    image: inclusionnarino/back:1.4.1
     container_name: inclusion-narino-back
     ports:
       - "3001:3001"
